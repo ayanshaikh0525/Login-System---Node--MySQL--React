@@ -36,7 +36,7 @@ function SignupPage() {
       }
 
       //if user has filled all necessary fields send axios post request
-      const res = await axios.post("http://localhost:5000/auth/signup", {
+      const res = await axios.post("http://localhost:3000/auth/signup", {
         username: username,
         email: email,
         password: password
