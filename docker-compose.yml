@@ -18,8 +18,7 @@ services:
     container_name: node_backend
     restart: always
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     environment:
       DB_HOST: db
       DB_USER: root
