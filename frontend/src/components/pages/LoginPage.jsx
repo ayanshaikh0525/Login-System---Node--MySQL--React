@@ -28,7 +28,7 @@ function LoginPage() {
         return; //return if the the case matches
       }
       //if user has filled all necessary fields send axios post request
-      const res = await axios.post("http://localhost:3000/auth/login", {
+      const res = await axios.post("http://localhost:5000/auth/login", {
         username: username,
         password: password
       });
