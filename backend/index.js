@@ -48,7 +48,7 @@ let pool; // initialize the database connection pool
   app.use("/auth", router);
 
   //making the app run on specified port
-  app.listen(port, () => {
-    console.log(`server running on http://localhost:${port}`);
+  app.listen(port, "0.0.0.0", () => {
+  console.log(`server running on port ${port}`);
   });
 })();
