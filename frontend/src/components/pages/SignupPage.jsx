@@ -36,7 +36,7 @@ function SignupPage() {
       }
 
       //if user has filled all necessary fields send axios post request
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/auth/signup`, {
         username: username,
         email: email,
         password: password
