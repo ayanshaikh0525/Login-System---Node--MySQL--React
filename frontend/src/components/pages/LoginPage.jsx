@@ -17,6 +17,7 @@ function LoginPage() {
   });
 
   //login function with axios
+  console.log(import.meta.env.VITE_API_URL);
   const handleLogin = async (e) => {
     e.preventDefault(); //disables the reload on submission
 
@@ -28,7 +29,7 @@ function LoginPage() {
         return; //return if the the case matches
       }
       //if user has filled all necessary fields send axios post request
-      console.log(import.meta.env.VITE_API_URL);
+      
       const res = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, {
         username: username,
         password: password
