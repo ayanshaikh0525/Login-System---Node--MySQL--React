@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Debug repo structure
+        run: ls -R      
+
       - name: Install dependencies
         run: |
           cd frontend
