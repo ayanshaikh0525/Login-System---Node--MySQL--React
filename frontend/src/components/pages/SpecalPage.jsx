@@ -10,7 +10,7 @@ function SpecialPage() {
   const toastWarningMessage = useRef(false); //for toast notification rendering once
 
   useEffect(() => {
-    document.title = "Login System - Special Page"; //dinamically changes the tittle
+    document.title = "Login System - Ayan Shaikh Special Page"; //dinamically changes the tittle
     //this function will be called after the component is rendered
     const checkIfToken = localStorage.getItem("token"); //check for token
     if (!checkIfToken || checkIfToken === null) {
