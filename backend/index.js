@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/health", (req, res) => {
-  res.status(200).send("OKK Ayan..!");
+  res.status(200).send("OK Ayan..!");
 });
 
 //creating a IIFE async await function for starting the database connection function as soon as possible and passing it down to the routes and starting the server after it
