@@ -1,0 +1,5 @@
+db_username="root"
+db_password="password"
+db_name="crudoperations"
+JWT_SECRET = "l7aAwhtxRrnHMOK7g7btJYHHk/COLVyvVY83nV7L9yg="
+db_tablename="users"
