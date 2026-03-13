@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/health", (req, res) => {
+app.get("/auth/health", (req, res) => {
   res.status(200).send("OK Ayan..!");
 });
 
