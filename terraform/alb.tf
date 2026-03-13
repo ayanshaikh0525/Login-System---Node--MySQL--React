@@ -20,7 +20,7 @@ resource "aws_lb_target_group" "ecs_tg" {
   target_type = "ip"
 
   health_check {
-    path = "/health"
+    path = "/auth/health"
     protocol = "HTTP"
     matcher  = "200"
     interval = 30

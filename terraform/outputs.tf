@@ -10,3 +10,11 @@ output "ecr_repo_url" {
 output "frontend_url" {
   value = aws_s3_bucket_website_configuration.frontend_website.website_endpoint
 }
+
+output "database-endpoint" {
+  value = aws_db_instance.mysql.endpoint
+}
+
+output "cloudfront_url" {
+  value = aws_cloudfront_distribution.frontend_cdn.domain_name
+}
